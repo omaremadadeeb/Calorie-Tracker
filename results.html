@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج حساب السعرات الحرارية</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles for results page */
+        #back-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 6px 12px; /* Reduced padding */
+            font-size: 12px; /* Reduced font size */
+            cursor: pointer;
+            position: absolute; /* Positioned absolutely */
+            top: 20px; /* Positioned at the top */
+            left: 20px; /* Positioned at the left */
+            z-index: 10; /* Ensures button is clickable */
+        }
+
+        #results-content {
+            text-align: center; /* Center-align content */
+            margin: 20px;
+        }
+
+        #chart-container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        #calories-needed {
+            margin-top: 20px; /* Space above the calories text */
+            font-size: 18px; /* Increase font size for readability */
+            font-weight: bold;
+        }
+
+        #meal-plans {
+            text-align: center; /* Center-align content */
+            margin-top: 20px;
+        }
+
+        .meal-category {
+            margin: 20px 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .meal-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            text-align: center; /* Center-align text */
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="back-button" onclick="window.history.back()">رجوع</button>
+        <div id="results-content">
+            <div id="chart-container">
+                <canvas id="calories-chart"></canvas>
+            </div>
+            <p id="calories-needed">السعرات الحرارية التي تحتاجها: <strong>1873 سعر حراري</strong></p>
+            <div id="meal-plans">
+                <div class="meal-category">وجبة الإفطار:</div>
+                <div class="meal-item">
+                    <div>بيض مقلي مع الأفوكادو</div>
+                </div>
+                <div class="meal-item">
+                    <div>عصير سموذي بالزيت جوز الهند</div>
+                </div>
+                <div class="meal-category">الغداء:</div>
+                <div class="meal-item">
+                    <div>سلطة دجاج مع زيت الزيتون</div>
+                </div>
+                <div class="meal-item">
+                    <div>جبن شيدر</div>
+                </div>
+                <div class="meal-category">وجبات خفيفة:</div>
+                <div class="meal-item">
+                    <div>المكسرات</div>
+                </div>
+                <div class="meal-item">
+                    <div>زبدة الفول السوداني</div>
+                </div>
+                <div class="meal-category">العشاء:</div>
+                <div class="meal-item">
+                    <div>لحم البقر مع الخضروات المطبوخة</div>
+                </div>
+                <div class="meal-item">
+                    <div>سلطة</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p><a href="https://www.instagram.com/hayaliomr?igsh=Zm84aDFmajRrdTF1" target="_blank">Instagram</a></p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="results.js"></script>
+</body>
+</html>

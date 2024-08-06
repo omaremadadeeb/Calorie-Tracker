@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl; /* Right-to-left text alignment for Arabic */
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+#back-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Reduced padding */
+    font-size: 12px; /* Reduced font size */
+    cursor: pointer;
+    position: absolute; /* Positioned absolutely */
+    top: 20px; /* Positioned at the top */
+    left: 20px; /* Positioned at the left */
+    z-index: 10; /* Ensures button is clickable */
+}
+
+
+
+
+/* Results Page Styles */
+#results-content {
+    text-align: center;
+}
+
+#chart-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+#calories-info {
+    margin-top: 10px;
+}
+
+#meal-plans {
+    text-align: right; /* Align text to the right for Arabic */
+}
+
+#meal-selection {
+    margin-bottom: 20px;
+    text-align: right; /* Align the select box to the right */
+}
+
+#meal-plans-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal-item {
+    border: 1px solid #007BFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    width: 90%;
+    max-width: 400px;
+    text-align: right; /* Align text to the right for Arabic */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Results Page Styles */
+#back-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Reduced padding */
+    font-size: 12px; /* Reduced font size */
+    cursor: pointer;
+    position: absolute; /* Positioned absolutely */
+    top: 20px; /* Positioned at the top */
+    left: 20px; /* Positioned at the left */
+    z-index: 10; /* Ensures button is clickable */
+}
+
+#results-content {
+    text-align: center; /* Center-align content */
+    margin: 20px;
+}
+
+#chart-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
+#calories-needed {
+    margin-top: 20px; /* Space above the calories text */
+    font-size: 18px; /* Increase font size for readability */
+    font-weight: bold;
+}
+
+#meal-plans {
+    text-align: center; /* Center-align content */
+    margin-top: 20px;
+}
+
+.meal-category {
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.meal-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    text-align: center; /* Center-align text */
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #007BFF;
+}
